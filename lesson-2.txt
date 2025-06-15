@@ -1,0 +1,10 @@
+1. Giải thích các câu lệnh: git init, git add <file_name>, git add ., git commit -m “message”. 
+    git init: dung de khoi tao dua tat ca cac file vao git quan li, cac file se duoc dua vao vung working
+    git add <file_name>: dung de dua 1 file vao vung staging 
+    git add . : add tat cac file vao vung staging
+    git commit -m"message": tao commit va day cac file tu vung staging sang vung commit
+2. Hãy tưởng tượng có 1 folder lesson-2 mới được tạo. Hãy liệt kê các file theo từng vùng sau khi thao tác một loạt các lệnh sau:
+    git init -> cac file 1,2,3 duoc vao vung working
+    git add git-course\lesson-2\file1 ->cac file 1 duoc chuyen sang vung staging, file 2 va 3 van o vung working
+    git commit -m"add file1" -> file1 duoc vao vung Repository, filw 2 va 3 van o vung working
+    git push origin main
