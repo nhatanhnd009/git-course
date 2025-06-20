@@ -15,46 +15,46 @@
         - Repository:
 b. Chạy lệnh: git init 
         - Local: file1, file2, file3
-        - Working directory:
+        - Working directory: file1, file2, file3
         - Staging area:
         - Repository:
 
 c. Chạy lệnh: git commit -m”init project” :
-        - Local:
+        - Local: file1, file2, file3
         - Working directory: file1, file2, file3
         - Staging area:
         - Repository:
 
 d. Chạy lệnh: git add file1 
-        - Local:
+        - Local: file1, file2, file3
         - Working directory: file2, file3
         - Staging area: file 1
         - Repository:
 e. Chạy lệnh: git commit -m”add file” 
-        - Local:
+        - Local: file1, file2, file3
         - Working directory: file2, file3
-        - Staging area: file 1
-        - Repository:
+        - Staging area:
+        - Repository: file 1
 f. Chạy lệnh: git add . 
-        - Local:
+        - Local: file1, file2, file3
         - Working directory: 
-        - Staging area: file 1, file2, file3
-        - Repository:
+        - Staging area:  file2, file3
+        - Repository: file 1
 g. Chạy lệnh: git restore --staged file2 
-        - Local:
+        - Local: file1, file2, file3
         - Working directory: file 2
-        - Staging area: file 1, file3
-        - Repository:
+        - Staging area:  file3
+        - Repository: file1
 h. Chạy lệnh: git commit -m”add all files” 
-        - Local:
+        - Local: file1, file2, file3 
         - Working directory: file 2
         - Staging area: 
         - Repository:file 1, file3
 i. Chạy lệnh: git reset HEAD~1 
-        - Local:
-        - Working directory: file 2 , file 1
+        - Local: file1, file2, file3
+        - Working directory: file 2 , file 3
         - Staging area: 
-        - Repository: file3
+        - Repository: file 1
 3.  Hãy tưởng tượng có 1 folder lesson-3-git mới được tạo ra. Hãy liệt kê các file theo từng vùng sau khi thao tác các lệnh sau: 
     a. Chạy lệnh git init 
         - Local:
