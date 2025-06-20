@@ -1,0 +1,85 @@
+1. Giải thích các câu lệnh: git commit --amend, git commit --amend -m”<message>”, git restore --staged <file>, git reset HEAD~1.
+    -   git commit --amend: Lệnh này dùng để thay đổi message của 1 commit, dùng sau khi dùng lệnh git commit -m"message". Khi gõ lệnh này sẽ mở ra vim để sửa
+        -- Sau khi gõ lệnh sẽ mở chế độ "insert" bằng gõ phím "i". Sau đó di chuột vào message để sửa.
+        -- Muốn thoát khỏi chế độ "Insert" -> gõ phím esc. Back lại chế độ Vim
+        -- Muốn thoát khỏi chế độ Vim -> Gõ "wq" 
+    - git commit --amend -m"message": sửa message của 1 commit mà ko cần vào giao diện Vim sửa nhanh hơn. 
+    - git restore --staged <file ( path file)>:Đưa file từ vùng stag về vùng WD.
+    - git reset Head~ (số lượng commit): hủy 1 commit với số lượng commit gần nhất. Đưa 1 commit từ vùng Repo về vùng WD.
+
+2. Hãy tưởng tượng có 1 folder lesson-3 mới được tạo. Hãy liệt kê các file theo từng vùng, liệt kê các commit và message tương ứng sau khi thao tác một loạt các lệnh sau (sẽ rất tuyệt vời nếu bạn không chạy trên máy tính thật, mà bạn chạy trong đầu, sẽ giúp bạn hiểu về Git rõ ràng hơn): 
+    a. Tạo 3 file: file1, file2, file3 
+        - Local: file1, file2, file3
+        - Working directory:
+        - Staging area:
+        - Repository:
+b. Chạy lệnh: git init 
+        - Local: file1, file2, file3
+        - Working directory:
+        - Staging area:
+        - Repository:
+
+c. Chạy lệnh: git commit -m”init project” :
+        - Local:
+        - Working directory: file1, file2, file3
+        - Staging area:
+        - Repository:
+
+d. Chạy lệnh: git add file1 
+        - Local:
+        - Working directory: file2, file3
+        - Staging area: file 1
+        - Repository:
+e. Chạy lệnh: git commit -m”add file” 
+        - Local:
+        - Working directory: file2, file3
+        - Staging area: file 1
+        - Repository:
+f. Chạy lệnh: git add . 
+        - Local:
+        - Working directory: 
+        - Staging area: file 1, file2, file3
+        - Repository:
+g. Chạy lệnh: git restore --staged file2 
+        - Local:
+        - Working directory: file 2
+        - Staging area: file 1, file3
+        - Repository:
+h. Chạy lệnh: git commit -m”add all files” 
+        - Local:
+        - Working directory: file 2
+        - Staging area: 
+        - Repository:file 1, file3
+i. Chạy lệnh: git reset HEAD~1 
+        - Local:
+        - Working directory: file 2 , file 1
+        - Staging area: 
+        - Repository: file3
+3.  Hãy tưởng tượng có 1 folder lesson-3-git mới được tạo ra. Hãy liệt kê các file theo từng vùng sau khi thao tác các lệnh sau: 
+    a. Chạy lệnh git init 
+        - Local:
+        - Working directory:
+        - Staging area: 
+        - Repository: 
+    b. Tạo file file1.txt, file2.txt, oops/file3.txt. 
+        - Local:file1, file2, oops/file3
+        - Working directory:
+        - Staging area: 
+        - Repository:
+    c. Thêm file .gitignore, thêm vào 2 dòng: 
+        i. file1.txt 
+        ii. oops/ 
+            - Local: file2
+            - Working directory:
+            - Staging area: 
+            - Repository:
+    d. Chạy lệnh: git add . 
+        - Local: 
+        - Working directory: 
+        - Staging area: file2
+        - Repository:
+    e. Chạy lệnh: git commit -m"init project" 
+        - Local: 
+        - Working directory: 
+        - Staging area:
+        - Repository: file2
