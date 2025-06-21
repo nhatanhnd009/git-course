@@ -62,15 +62,15 @@ i. Chạy lệnh: git reset HEAD~1
         - Staging area: 
         - Repository: 
     b. Tạo file file1.txt, file2.txt, oops/file3.txt. 
-        - Local:file1, file2, oops/file3
-        - Working directory:
+        - Local: file1, file2, oops/file3
+        - Working directory: file1, file2, oops/file3
         - Staging area: 
         - Repository:
     c. Thêm file .gitignore, thêm vào 2 dòng: 
         i. file1.txt 
         ii. oops/ 
             - Local: file2
-            - Working directory:
+            - Working directory: file2
             - Staging area: 
             - Repository:
     d. Chạy lệnh: git add . 
